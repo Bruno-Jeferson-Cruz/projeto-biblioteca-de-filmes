@@ -5,11 +5,13 @@
 }
 @font-face {
     font-family: 'desc';
-    src: url('fontes/gunplay\ rg.ttf');
+    src: url('Cambria, Cochin, Georgia, Times, Times New Roman, serif');
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --corBackGround:rgba(68, 67, 67, 0.829);
@@ -20,10 +22,15 @@
     --fontMenu:'titulo';
     --fontDesc:'desc';
 }
+body{
+    background-image:   url('imagens/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
 header{
     min-height: 60px;
-    background-color: rgb(206, 203, 255);
-    padding: 10px;
+    background-color: #cecbff;
+    padding: 20px;
     margin: 0px 0px;
     border-bottom-left-radius:10px ;
     border-bottom-right-radius:10px ;
@@ -32,51 +39,86 @@ header{
 header h1{
     color: var(--corH1);
     font-family: var(--fontMenu);
-    font-size: 2em;
+    font-size: 3em;
     padding-top: 10px;
-    margin: 0px 0px 0px 35%;
+    width: auto;
+    text-align: center;
+    margin-bottom:20px;
     text-shadow: 1px 1px rgb(3, 3, 24);
 }
-body{
-    background-image:   url('imagens/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+header nav{
+    text-align: center;
 }
-
-div{
-    display: block;
-    border: 10px solid black;
-    width: auto;
+header nav > a{
+    text-decoration: none;
+    background-color: var(--corH1);
+    color: white;
     padding: 10px;
+    margin:10px;
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header nav> a:hover{
+    background-color: var(--corH2);
+    color: gray;
+    transition: 0.5s;
+    border-radius: 8px;
 }
 
-div.filme1{
+main{
+    height: 100px;
+    margin: 10px 180px;
+    width: 1100px;
+}
+
+div.filme{
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: inline-block;
+    width:300px;
+    border: 4px solid rgba(0, 0, 0, 0.39);
+    padding: 10px;
+    margin: 5px 5px;
     background-color: rgb(31, 31, 36);
 }
-
-div.filme2{
-
+div.filme:hover{
+    transition: 0.3s;
+    border-radius: 10px;
+    background-color: rgb(101, 101, 107);
+    width: 400px;
 }
-
-div.filme3{
-    
+div.filme >img{
+    border-radius: 1px solid black;
+    display: block;
+    margin: auto;
+    border-radius: 6px;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
 }
-
-div.filme4{
-
-}   
-
-div.filme5{
-    
+div.filme>h2{
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: var(--fontDesc);
 }
-div.filme6{
-    
+div.filme >a{
+    background-color: var(--corH1);
+    font-family: var(--fontDesc);
+    font-size: 17px;
+    color:white;
+    margin: auto;
+    width: 85px;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
 }
-div.filme7{
-    
-}
-div.filme8{
-    
+div.filme >a:hover{
+    background-color: var(--corH2);
+    color: gray;
+    transition: 0.5s;
+    border-radius: 8px;
 }
