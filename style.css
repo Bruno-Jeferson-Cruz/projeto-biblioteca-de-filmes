@@ -48,6 +48,7 @@ header h1{
 }
 header nav{
     text-align: center;
+    width: auto;
 }
 header nav > a{
     text-decoration: none;
@@ -68,7 +69,7 @@ header nav> a:hover{
 main{
     height: 100px;
     margin: 10px 180px;
-    width: 1100px;
+    width: auto;
 }
 
 div.filme{
@@ -86,7 +87,7 @@ div.filme:hover{
     transition: 0.3s;
     border-radius: 10px;
     background-color: rgb(101, 101, 107);
-    width: 400px;
+    width: 350px;
 }
 div.filme >img{
     border-radius: 1px solid black;
