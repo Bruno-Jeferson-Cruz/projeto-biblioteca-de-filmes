@@ -18,7 +18,7 @@
     --corMenu:#354AE6;
     --corH1:#2B00EB;
     --corH2:#1612df;
-
+    
     --fontMenu:'titulo';
     --fontDesc:'desc';
 }
@@ -26,12 +26,13 @@ body{
     background-image:   url('imagens/background.jpg');
     background-attachment: fixed;
     background-size: cover;
+    width: 98.9vw;
+    height: 100vh;
+    margin: auto;
 }
 header{
-    min-height: 60px;
     background-color: #cecbff;
     padding: 20px;
-    margin: 0px 0px;
     border-bottom-left-radius:10px ;
     border-bottom-right-radius:10px ;
     box-shadow: rgba(0, 0, 0, 0.438) 0px 1px 2px 1px
@@ -53,7 +54,6 @@ header nav > a{
     background-color: var(--corH1);
     color: white;
     padding: 10px;
-    margin:10px;
     border-radius: 5px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -63,37 +63,29 @@ header nav> a:hover{
     transition: 0.5s;
     border-radius: 8px;
 }
-
-main{
-    height: 100px;
-    padding:40px 10px 20px 30px;
-    margin: auto;
-}
-
 div.filme{
-    max-height: 500px;
     object-fit: cover;
     border-radius: 6px;
     display: inline-block;
-    width:300px;
+    margin: 10px 0px 10px 5px;
+    margin-left: 5px;
+    font-size: 16px;
     border: 4px solid rgba(0, 0, 0, 0.39);
-    padding: 10px;
-    margin: 5px 5px;
+    padding: 10px 10px;
     background-color: rgb(31, 31, 36);
 }
 div.filme:hover{
     transition: 0.3s;
     border-radius: 10px;
     background-color: rgb(101, 101, 107);
-    width: 350px;
 }
 div.filme >img{
     border-radius: 1px solid black;
     display: block;
     margin: auto;
     border-radius: 6px;
-    max-width: 400px;
-    max-height: 400px;
+    min-width: 300px;
+    max-height: 380px;
     object-fit: cover;
 }
 div.filme>h2{
