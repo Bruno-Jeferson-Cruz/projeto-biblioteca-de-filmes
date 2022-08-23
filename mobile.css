@@ -16,14 +16,6 @@
     --fontMenu:'titulo';
     --fontDesc:'desc';
 }
-body{
-    background-image:   url('imagens/background.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
-
 header{
     background-color: rgba(128, 128, 128, 0.096);
     width: 100vw;
@@ -31,28 +23,84 @@ header{
     padding: 10px;
 }
 header h1{
-        color: var(--corH1);
-        font-family: var(--fontMenu);
-        font-size: 2.5em;
-        padding-top: 7px;
-        text-align: center;
-        padding-bottom:10px;
-        text-shadow: 1px 0px rgba(3, 3, 24, 0.37);
+    color: var(--corH1);
+    font-family: var(--fontMenu);
+    font-size: 4em;
+    padding-top: 7px;
+    text-align: center;
+    padding-bottom:10px;
+    text-shadow: 1px 0px rgba(3, 3, 24, 0.37);
 }
+header nav{
+    margin: 10px;
+    text-align: center;
+}
+
 header nav > a{
     text-decoration: none;
     background-color: var(--corH1);
     color: white;
     border-radius: 5px;
     padding: 10px;
-
+    font-size: 1.5em;
+}
+header nav >a:hover{
+    background-color: #2b00eba2;
+    border-radius: 8px;
+    transition: .3s;
+    font-size: 1.6em;
+}
+body{
+    background-image:   url('imagens/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+}
+main{
+    margin: auto;
+    width: 90vw;
+}
+div.filme{
+    display: inline-table;
+    background-color: rgba(63, 62, 62, 0.822);
+    margin: 20px 30px;
+    text-align: center;
+    padding: 20px;
+    width: 25vw;
+    border-radius: 10px;
+    color: white;
+    font-family: var(--fontDesc);
+}
+div.filme:hover{
+    background-color: rgb(63, 62, 62);
+    border-radius: 12px;
+    font-weight: normal;
+    width: 25.5vw;
+    height: 490px;
+    transition: .8s;
+}
+h2{
+    font-weight: bold;
+    font-size: 1.17em;
+    margin-bottom: 20px;
 }
 div.filme >img{
-    border-radius: 1px solid black;
-    display: block;
-    margin: auto;
-    border-radius: 6px;
-    min-width: 300px;
-    max-height: 400px;
-    object-fit: cover;
+    border-radius: 8px;
+    min-width: 280px;
+    max-height: 380px;
+}
+div.filme>a{
+    text-decoration: none;
+    background-color: var(--corH1);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+}
+div.filme >a:hover{
+    background-color: #3f00ebb6;
+    border-radius: 8px;
+    transition: .5s;
 }

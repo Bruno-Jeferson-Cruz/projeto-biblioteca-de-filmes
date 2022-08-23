@@ -47,9 +47,9 @@ header h1{
     text-shadow: 1px 1px rgb(3, 3, 24);
 }
 header nav{
-    text-align: center;
+    text-align: right;
 }
-c
+
 header nav> a:hover{
     background-color: var(--corH2);
     color: gray;
