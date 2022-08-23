@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --corBackGround:rgba(68, 67, 67, 0.829);
+    --corMenu:#354AE6;
+    --corH1:#2B00EB;
+    --corH2:#1612df;
+    
+    --fontMenu:'titulo';
+    --fontDesc:'desc';
+}
+body{
+    background-image:   url('imagens/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-color: rgba(128, 128, 128, 0.096);
+    width: 100vw;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+header h1{
+        color: var(--corH1);
+        font-family: var(--fontMenu);
+        font-size: 2.5em;
+        padding-top: 7px;
+        text-align: center;
+        padding-bottom:10px;
+        text-shadow: 1px 0px rgba(3, 3, 24, 0.37);
+}
+header nav > a{
+    text-decoration: none;
+    background-color: var(--corH1);
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+div.filme >img{
+    border-radius: 1px solid black;
+    display: block;
+    margin: auto;
+    border-radius: 6px;
+    min-width: 300px;
+    max-height: 400px;
+    object-fit: cover;
+}
